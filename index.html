@@ -3,15 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/eb48babf47.js" crossorigin="anonymous"></script>    
+    <title>CSS Desafio Grid</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
-    <header>
-        <h3>Mi Ecommerce</h3>
-    </header>
-          
+    <div class="grid-container">
+        <header>
+            <h3>Mi Ecommerce</h3>
+        </header>
+    
+        <main>
+            <section class="aside-bar grid-item">
+                <h2>Categorías</h2>
+                <ul>
+                    <div class="items">
+                        <li><b>Perfumes</b></li>
+                        <p>(13)</p>
+                    </div>
+                    <div class="items">
+                        <li><b>Ropa</b></li>
+                        <p>(21)</p>
+                    </div>
+                    <div class="items">
+                        <li><b>Accesorios</b></li>
+                        <p>(41)</p>
+                    </div>
+                    <div class="items">
+                        <li><b>Zapatos</b></li>
+                        <p>(10)</p>
+                    </div>
+                </ul>
+            </section>
+    
+            <section class="grilla grid-item">
+                <div class="card grid-item">
+                    <img src="./assets/img/1.png" alt="">
+                    <h2>Zapatillas Azules</h2>
+                    <p>75.800</p>
+                    <button>Comprar</button>
+                </div>
+    
+                <div class="card grid-item">
+                    <img src="./assets/img/2.png" alt="">
+                    <h2>Zapatillas Blancas</h2>
+                    <p>40.900</p>
+                    <button>Comprar</button>
+                </div>
+    
+                <div class="card grid-item">
+                    <img src="./assets/img/3.png" alt="">
+                    <h2>Zapatillas Sport</h2>
+                    <p>57.500</p>
+                    <button>Comprar</button>
+                </div>
+    
+                <div class="card grid-item">
+                    <img src="./assets/img/4.png" alt="">
+                    <h2>Audifonos</h2>
+                    <p>99.900</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card grid-item">
+                    <img src="./assets/img/5.png" alt="">
+                    <h2>Teléfono</h2>
+                    <p>700.000</p>
+                    <button>Comprar</button>
+                </div>
+                
+ 
+
+            </section>
+        </main>
+    
+        <footer>
+            <p>@miecommerce</p>
+        </footer>
+    </div>
 </body>
 </html>

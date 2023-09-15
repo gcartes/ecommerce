@@ -1,17 +1,90 @@
+
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-header{
-  background-color: blue;
-  text-align: center;
+p {
+    font-style: italic;
+    padding-left: 5px;
+}
+
+header {
+    grid-area: header;
+    background-color: #2a527d;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+}
+
+.aside-bar {
+    background-color: #e7e7e7;
+    min-height: 40vh;
+    padding: 25px;
+}
+
+.aside-bar h2{
+  padding-bottom: 20px;
+}
+.aside-bar .items {
+    display: flex;
+}
+
+
+.aside-bar ul {
+    list-style: none;
+}
+
+.aside-bar ul li{
+  padding-bottom: 10px;
+}
+
+.grilla .card {
+    text-align: center;
+    padding: 20px;
+}
+
+.grilla .card button{
+  padding: 15px;
+  background-color: #2a527d;
   color: white;
-  padding: 10px;
+  width: 100%;
+  font-size: 15px;
 }
 
-footer{
-  text-align: center;
-  padding: 10px;
+.grilla .card img {
+    width: 200px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 10px;  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    gap: 10px;
+}
+
+.grid-container main {
+    display: grid;
+    grid-template-columns: auto 80%;
+    gap: 10px;
+}
+
+
+.grid-container .grilla {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
 }
