@@ -44,6 +44,10 @@ main {
   padding-bottom: 10px;
 }
 
+.grilla{
+  display: flex;
+}
+
 .grilla .card {
     text-align: center;
     padding: 20px;
